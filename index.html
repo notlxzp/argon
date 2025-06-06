@@ -1,16 +1,18 @@
-<!DOCTYPE html><html lang="en"><head>
+f<!DOCTYPE html>
+<html lang="en">
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Argon</title>
-    <link rel="icon" type="image/png" href="images/2e43a5b.png">
-    <meta content="Argon" property="og:title">
-    <meta content="The Most Advanced Roblox Executor" property="og:description">
-    <meta content="images/2e43a5b.png" property="og:image">
-    <meta content="#4d9fff" data-react-helmet="true" name="theme-color">
+    <link rel="icon" type="image/png" href="https://iili.io/2e43a5b.png">
+    <meta content="Argon" property="og:title" />
+    <meta content="The Most Advanced Roblox Executor" property="og:description" />
+    <meta content="https://iili.io/2e43a5b.png" property="og:image" />
+    <meta content="#4d9fff" data-react-helmet="true" name="theme-color" />
     <meta name="twitter:card" content="summary_large_image">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Fira+Code:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/all.min.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="background-effects">
@@ -25,8 +27,8 @@
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <img src="images/argon.png" alt="Argon Logo" class="brand-logo">
-                <span class="brand-text">ARGON</span>
+                <img src="argon.png" alt="Argon Logo" class="brand-logo">
+                <span class="brand-text"></span>
             </div>
             
             <div class="nav-menu">
@@ -71,11 +73,11 @@
                 </h1>
                 <p class="hero-description">
                     Experience unmatched power and precision with Argon's cutting-edge Roblox executor. 
-                    Instant execution, unlimited possibilities.
+                    Zero detection, instant execution, unlimited possibilities.
                 </p>
                 <div class="hero-actions">
-                    <button onclick="window.location.href='https://superfiles.net/argon/Argon-2.1.4.rar';" class="btn-primary">
-                        <span>Download</span>
+                    <button class="btn-primary scroll-to-pricing">
+                        <span>Get Started</span>
                         <i class="fas fa-arrow-right"></i>
                         <div class="btn-glow"></div>
                     </button>
@@ -91,8 +93,13 @@
                         <div class="stat-label">Execution Time</div>
                     </div>
                     <div class="stat-card">
+                        <i class="fas fa-shield-alt stat-icon"></i>
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Undetected</div>
+                    </div>
+                    <div class="stat-card">
                         <i class="fas fa-users stat-icon"></i>
-                        <div class="stat-value">1K+</div>
+                        <div class="stat-value">50K+</div>
                         <div class="stat-label">Active Users</div>
                     </div>
                 </div>
@@ -107,6 +114,7 @@
                         </div>
                         <div class="preview-tabs">
                             <div class="tab active">main.lua</div>
+                            <div class="tab">config.lua</div>
                         </div>
                     </div>
                     <div class="preview-editor">
@@ -125,6 +133,7 @@ local argon = require("argon")
 
 -- Configure settings
 argon.config({
+    mode = "silent",
     bypass = "hyperion"
 })
 
@@ -174,8 +183,46 @@ local success = argon:execute(script)</code></pre>
         </div>
         <div class="showcase-content">
             <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/n_tWvIVQVFPAg" title="Argon Showcase" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                <iframe 
+                    src="https://www.youtube.com/embed/n_R5bwZ5B50" 
+                    title="Argon Showcase"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
                 </iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="tools" id="tools">
+        <div class="section-header">
+            <h2>Tools</h2>
+            <p>Everything you need in one place</p>
+        </div>
+        <div class="tools-grid">
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h3>Script Editor</h3>
+                <p>Advanced code editor with syntax highlighting</p>
+                <a href="https://discord.gg/theargon" class="btn-outline">Try Now</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <i class="fas fa-bug"></i>
+                </div>
+                <h3>Debug Console</h3>
+                <p>Powerful debugging tools for script testing</p>
+                <a href="https://discord.gg/theargon" class="btn-outline">Try Now</a>
+            </div>
+            <div class="tool-card">
+                <div class="tool-icon">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <h3>Script Sharing</h3>
+                <p>Join our Discord community to share and discover scripts with other members.</p>
+                <a href="https://discord.gg/theargon" class="btn-outline">Try Now</a>
             </div>
         </div>
     </section>
@@ -190,25 +237,7 @@ local success = argon:execute(script)</code></pre>
                 <div class="card-header">
                     <h3>Standard</h3>
                     <div class="price">
-                        <span class="amount">$2.99</span>
-                        <span class="period">/week</span>
-                    </div>
-                </div>
-                <div class="card-content">
-                    <ul class="features">
-                        <li><i class="fas fa-check"></i> Full Access</li>
-                        <li><i class="fas fa-check"></i> No Key System</li>
-                        <li><i class="fas fa-check"></i> Full Support</li>
-                    </ul>
-                    <a href="https://ecstxsy.sell.app/product/argon-monthly" class="btn-primary">Buy Now!</a>
-                </div>
-            </div>
-            <div class="pricing-card featured">
-                <div class="card-header">
-                    <span class="badge">The Best</span>
-                    <h3>Premium</h3>
-                    <div class="price">
-                        <span class="amount">$5.99</span>
+                        <span class="amount">$4.99</span>
                         <span class="period">/month</span>
                     </div>
                 </div>
@@ -218,15 +247,16 @@ local success = argon:execute(script)</code></pre>
                         <li><i class="fas fa-check"></i> No Key System</li>
                         <li><i class="fas fa-check"></i> Full Support</li>
                     </ul>
-                    <a href="https://ecstxsy.sell.app/product/argon-3months" class="btn-primary">Buy Now!</a>
+                    <a href="discord.gg/theargon" class="btn-primary">Buy Now!</a>
                 </div>
             </div>
-            <div class="pricing-card">
+            <div class="pricing-card featured">
                 <div class="card-header">
-                    <h3>Personal</h3>
+                    <span class="badge">The Best</span>
+                    <h3>Premium</h3>
                     <div class="price">
-                        <span class="amount">120.99$</span>
-			<span class="period">/year</span>
+                        <span class="amount">$13.49</span>
+                        <span class="period">/3 months</span>
                     </div>
                 </div>
                 <div class="card-content">
@@ -235,7 +265,68 @@ local success = argon:execute(script)</code></pre>
                         <li><i class="fas fa-check"></i> No Key System</li>
                         <li><i class="fas fa-check"></i> Full Support</li>
                     </ul>
-                    <a href="https://superfiles.net/argon/Argon-2.1.4.rar" class="btn-outline">Download Now!</a>
+                    <a href="discord.gg/theargon" class="btn-primary">Buy Now!</a>
+                </div>
+            </div>
+            <div class="pricing-card">
+                <div class="card-header">
+                    <h3>Personal</h3>
+                    <div class="price">
+                        <span class="amount">Free</span>
+                    </div>
+                </div>
+                <div class="card-content">
+                    <ul class="features">
+                        <li><i class="fas fa-check"></i> Partial Access</li>
+                        <li><i class="fas fa-check"></i> Key System</li>
+                        <li><i class="fas fa-check"></i> Basic Support</li>
+                    </ul>
+                    <a href="discord.gg/theargon" class="btn-outline">Get Now!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="updates" id="updates">
+        <div class="section-header">
+            <h2>Latest Updates</h2>
+            <p>Stay up to date with our latest changes</p>
+        </div>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Version 3.5.0</h3>
+                    <ul>
+                        <li>New and Clean UI</li>
+                        <li>Multi-Instance</li>
+                        <li>Themes</li>
+                        <li>Bug fixes and optimizations</li>
+                    </ul>
+                    <span class="update-date">2025</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Version 2.4.0</h3>
+                    <ul>
+                        <li>New script execution engine</li>
+                        <li>Added more game compatibilities</li>
+                        <li>Interface improvements</li>
+                        <li>Performance optimizations</li>
+                    </ul>
+                    <span class="update-date">2024</span>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Version 2.3.0</h3>
+                    <ul>
+                        <li>Major stability improvements</li>
+                        <li>Enhanced script compatibility</li>
+                        <li>UI/UX enhancements</li>
+                        <li>Bug fixes and optimizations</li>
+                    </ul>
+                    <span class="update-date">2024</span>
                 </div>
             </div>
         </div>
@@ -252,7 +343,7 @@ local success = argon:execute(script)</code></pre>
                     <p>"Best executor I've used for Blox Fruits. Scripts load instantly and never crash."</p>
                 </div>
                 <div class="review-author">
-                    <span>- X7Z</span>
+                    <span>- BloxMaster_2024</span>
                 </div>
             </div>
             <div class="review-card">
@@ -260,7 +351,7 @@ local success = argon:execute(script)</code></pre>
                     <p>"Been using it for Pet Simulator X, works flawlessly. Worth every penny!"</p>
                 </div>
                 <div class="review-author">
-                    <span>- Rwackz</span>
+                    <span>- PetSimPro</span>
                 </div>
             </div>
             <div class="review-card">
@@ -268,7 +359,7 @@ local success = argon:execute(script)</code></pre>
                     <p>"Perfect for Arsenal. Clean UI and super stable compared to others."</p>
                 </div>
                 <div class="review-author">
-                    <span>- HyperCraxy</span>
+                    <span>- ArsenalKing</span>
                 </div>
             </div>
         </div>
@@ -332,7 +423,7 @@ local success = argon:execute(script)</code></pre>
         <div class="footer-content">
             <div class="footer-brand">
                 <div class="brand-icon">
-                    <img src="images/argon.png" alt="Argon Logo" class="footer-logo">
+                    <img src="argon.png" alt="Argon Logo" class="footer-logo">
                 </div>
                 <h3>ARGON</h3>
                 <p>Next generation Roblox script executor</p>
@@ -360,11 +451,10 @@ local success = argon:execute(script)</code></pre>
             </div>
         </div>
         <div class="footer-bottom">
-            <p class="copyright">© 2025 Argon. All rights reserved.</p>
+            <p class="copyright">&copy; 2025 Argon. All rights reserved.</p>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
-
-
-</body></html>
+    <script src="script.js"></script>
+</body>
+</html>
